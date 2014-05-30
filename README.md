@@ -39,10 +39,10 @@ Just double click services to open them in Automator.
 
 ##Usage
 After copying services files to *Services* folder, 
-1. Open Finder
-2. Select your file
-3. Select Finder>Services menu. The different Services should be there. If not, restart Finder.
-4. Select your prefered conversion
+*1. Open Finder
+*2. Select your file
+*3. Select Finder>Services menu. The different Services should be there. If not, restart Finder.
+*4. Select your prefered conversion
 
 # License
 
