@@ -1,11 +1,7 @@
 fontconversion
 ==============
 
-<<<<<<< HEAD
-Convert any font format or autohint it by command line or contextual menu in Finder.
-=======
 Convert any font format or autohint it (ADFKO or ttfautohint) by command line or contextual menu in Finder.
->>>>>>> b400301876cddea0554da89281d064b53401a9b4
 Super easy.
 
 #Command line usage
