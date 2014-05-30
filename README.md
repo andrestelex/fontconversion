@@ -1,4 +1,4 @@
-fontconversion
+Font Conversion
 ==============
 
 Convert fonts in OTF, TTF, SVG or WOFF formats or autohint them (ADFKO or ttfautohint) by command line or contextual menu in Finder.
