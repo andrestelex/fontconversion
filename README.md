@@ -20,7 +20,7 @@ If you want to change the way the fonts are converted, just read the FontForge s
 #Services
 ##Requirements
 OSX
-AFDK and/or (if you want to use the autohint option)
+AFDK and/or ttfautohint (if you want to use the autohint option)
 
 ##Install OSX Services
 Copy *font-converter* folder to your user folder (/Users/yourusername/)
