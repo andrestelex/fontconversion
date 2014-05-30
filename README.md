@@ -1,7 +1,7 @@
 fontconversion
 ==============
 
-Convert any font format by command line or contextual menu in Finder.
+Convert any font format or autohint it by command line or contextual menu in Finder.
 Super easy.
 
 #Requirements for command line
@@ -14,6 +14,10 @@ Fontforge
 #Modification
 If you want to change the way the fonts are converted, just read the FontForge script tutorial at http://fontforge.org/scripting-tutorial.html and do your own changes in .pe files.
 	
+
+#Requirements for services
+OSX
+AFDK and/or (if you want to use the autohint option)
 
 #Install OSX Services
 Copy *font-converter* folder to your user folder (/Users/yourusername/)
