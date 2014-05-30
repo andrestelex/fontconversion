@@ -27,6 +27,7 @@ Copy *font-converter* folder to your user folder (/Users/yourusername/)
 Copy files under *Services* folder to *~/Library/Services/* or double click to install them.
 
 Services files execute this command:
+	
 	for f in "$@"
 	do
 		/usr/local/bin/fontforge -script ~/font-converter/script.pe "$f"
