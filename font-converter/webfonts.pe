@@ -1,0 +1,16 @@
+#!/usr/bin/fontforge
+i=1
+Print("-----Start-------")
+while ( i<$argc )
+        folder=$argv[i]:h+"/"
+	archivo=folder+$argv[i]:t
+	Print(archivo)
+	Open($argv[i])
+	#Print($argv[i])
+	Generate(archivo:r+".svg")
+	ScaleToEm(2048)
+	RoundToInt()
+	Generate(archivo:r + ".ttf")
+	Print("------------")
+	i = i+1
+endloop

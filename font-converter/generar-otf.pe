@@ -1,0 +1,14 @@
+#!/usr/local/bin/fontforge
+i=1
+Print("-----Start-------")
+while ( i<$argc )
+   folder=$argv[i]:h+"/"
+	archivo=folder+$argv[i]:t
+	Print("------------")
+	Open($argv[i])
+	Print($argv[i])
+	ScaleToEm(1000)
+	Generate(archivo:r + ".otf")
+	Print("------------")
+	i = i+1
+endloop

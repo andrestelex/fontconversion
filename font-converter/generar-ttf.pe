@@ -1,0 +1,37 @@
+#!/usr/bin/fontforge
+i=1
+Print("-----Start-------")
+while ( i<$argc )
+	Print($argv[i])
+	folder=$argv[i]:h+"/"
+	archivo=folder+$argv[i]:t
+	Open($argv[i])
+	ScaleToEm(2048)
+	SetFontOrder(2);
+	Simplify(128,2.05);
+	Simplify(128,2.05);
+	RoundToInt();
+	RoundToInt();
+	
+	#2
+	UnlinkReference();
+	RemoveOverlap();
+	CorrectDirection();
+	
+	#3 Vertical metrics 
+	# Set "is offset" to off
+	SetOS2Value("WinAscentIsOffset", 0) 
+	SetOS2Value("WinDescentIsOffset", 0)
+	SetOS2Value("TypoAscentIsOffset", 0) 
+	SetOS2Value("TypoDescentIsOffset", 0)
+	SetOS2Value("HHeadAscentIsOffset", 0)
+	SetOS2Value("HHeadDescentIsOffset", 0)
+	
+	#4
+	AddInstrs("prep", 1, "PUSHW_1 511 SCANCTRL PUSHB_1 4 SCANTYPE");
+	
+	#5 Generar
+	Generate(archivo:r + "_2048.ttf")
+	Print("------------")
+	i = i+1
+endloop
